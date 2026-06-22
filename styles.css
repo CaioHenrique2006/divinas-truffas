@@ -1,0 +1,29 @@
+:root {
+    --background--color: linear-gradient(#fff7ad, #ffa9f9);
+    --font--color: black;
+    --card--color: #d9d9d9;
+    --footer--color: linear-gradient(#ff5757, #8c52ff);
+    --logo--color: rgb(243, 127, 233);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+body {
+    background: var(--background--color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4vw;
+
+    h1 {
+        color: var(--logo--color);
+    }
+}
