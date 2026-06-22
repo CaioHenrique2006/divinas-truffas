@@ -27,3 +27,25 @@ header {
         color: var(--logo--color);
     }
 }
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 100px;
+    height: 80vh;
+    background-color: black;
+    padding: 2vw;
+    border-right: #f357d1 solid 1px;
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        margin: 1vw;
+    }
+}
