@@ -49,3 +49,30 @@ header {
         margin: 1vw;
     }
 }
+
+main {
+    padding: 4vw;
+
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .left-content {
+            display: flex;
+            flex-direction: column;
+            gap: 2vw;
+        }
+
+        .right-content {
+           display: flex;
+           flex-direction: column;
+           gap: 2vw;
+
+            img {
+                height: 200px;
+            }
+        }
+    }
+
+}
