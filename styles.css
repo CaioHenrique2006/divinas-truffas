@@ -51,36 +51,35 @@ header {
 }
 
 main {
-    padding: 5vw;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 
     .hero {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 40px;
+    }
 
-        .hero-content {
-            display: flex
-        }
+    .left-content {
+        font-size: 1.1rem;
+        padding: 5vw;
+        margin-bottom: 100px;
 
-        .left-content {
-            display: flex;
-            flex-direction: column;
-            gap: 2vw;
-        }
-
-        .right-content {
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-           gap: 2vw;
-           
-
-            img {
-                height: 200px;
-                width: 300px;
-            }
+        h2 {
+            margin-bottom: 20px;
         }
     }
 
+    .right-content {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 250px;
+        }
+
+        p {
+            margin-bottom: 200px;
+        }
+    }
 }
