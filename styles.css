@@ -26,6 +26,16 @@ header {
     h1 {
         color: var(--logo--color);
     }
+
+    .menu-icon {
+        width: 40px;
+        cursor: pointer;
+    }
+
+    .search-icon {
+        width: 40px;
+        cursor: pointer;
+    }
 }
 
 .sidebar {
@@ -51,7 +61,7 @@ header {
 }
 
 main {
-    font-size: 1.4rem;
+    padding: 2vw;
 
     .hero {
         display: flex;
@@ -61,8 +71,8 @@ main {
     }
 
     .left-content {
-        font-size: 1.1rem;
-        padding: 5vw;
+        font-size: 1rem;
+        padding: 2vw;
         margin-bottom: 100px;
 
         h2 {
@@ -73,6 +83,9 @@ main {
     .right-content {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+        margin-bottom: 100px;
 
         img {
             width: 250px;
@@ -80,6 +93,27 @@ main {
 
         p {
             margin-bottom: 200px;
+        }
+    }
+}
+
+#flavors {
+    padding: 2vw;
+
+    h3 {
+       text-align: center;
+    }
+
+    .flavors-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        gap: 20px;
+
+        .flavors-card {
+            border: 1px solid rgb(163, 161, 161);
+            padding: 80px;
+            text-align: center; 
         }
     }
 }
