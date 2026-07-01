@@ -139,13 +139,70 @@ main {
         border: 1px solid rgb(150, 136, 136);
         border-radius: 10px;
         padding: 2vw;
+        max-width: 600px;
+        margin: 0 auto; 
+
+        .grupo-form {
+            width: 100%;
+        }
 
         .campo-form {
             width: 100%;
-            padding: 10px;
+            padding: 20px;
+            margin: 10px;
             outline: none;
             border: 1px solid rgb(150, 136, 136);
             border-radius: 10px;
+        }
+
+        button {
+            width: 25%;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 8px;
+            border: none;
+        }
+    }
+}
+
+#sobre {
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    h2 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 20px;
+        max-width: 600px;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background: var(--footer--color);
+        padding: 2vw;
+        width: 105%;
+
+        img {
+            width: 160px;
+        }
+
+        h1 {
+            position: relative;
+            top: 20px;
+            color: #fff;
+        }
+
+        p {
+            position: relative;
+            top: 40px;
         }
     }
 }
