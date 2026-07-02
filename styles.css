@@ -1,12 +1,11 @@
 :root {
     --background--color: linear-gradient(#fff7ad, #ffa9f9);
     --font--color: black;
-    --card--color: #d9d9d9;
+    --card--color: #d8d8d891;
     --footer--color: linear-gradient(#ff5757, #8c52ff);
     --logo--color: rgb(243, 127, 233);
     --bg-card--color: rgba(163, 161, 161 , 0.4);
-    --bg-card1--color: rgb(71, 27, 27);
-    --font--color2: white;
+    --font--color2: rgb(255, 208, 0);
 }
 
 * {
@@ -131,15 +130,21 @@ main {
             text-align: center;
             background: var(--bg-card--color);
             cursor: pointer;
-            transition: 0.5s;
+            transition: 0.4s;
         }
 
-        .flavors-card:nth-child(1):hover {
-            background: var(--bg-card1--color)
+        .flavors-card:nth-child(3):hover {
+            background: rgb(255, 196, 0);
+            color: var(--font--color);
         }
 
-        .flavors-card:nth-child(2):hover {
-            background: var(--bg-card1--color)
+        .flavors-card:nth-child(4):hover {
+            background: rgb(241, 7, 7);
+            color: var(--font--color2);
+        }
+
+        .flavors-card:nth-last-child(2):hover {
+            background: rgb(167, 71, 26);
         }
     }
 }
