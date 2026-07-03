@@ -6,6 +6,7 @@
     --logo--color: rgb(243, 127, 233);
     --bg-card--color: rgba(163, 161, 161 , 0.4);
     --font--color2: rgb(255, 208, 0);
+    --font--color3: rgb(255, 255, 255);
 }
 
 * {
@@ -17,6 +18,7 @@
 
 body {
     background: var(--background--color);
+    scroll-behavior: smooth;
 }
 
 header {
@@ -52,13 +54,15 @@ header {
 
 .sidebar {
     position: fixed;
-    top: 0;
-    left: -250px;
-    width: 100px;
-    height: 80vh;
+    top: 120px;
+    left: 20px;
+    height: 50vh;
     background-color: black;
-    padding: 2vw;
-    border-right: #f357d1 solid 1px;
+    padding: 7vw;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    
 
     .menu {
         display: flex;
@@ -68,7 +72,12 @@ header {
     a {
         text-decoration: none;
         color: white;
-        margin: 1vw;
+        margin: 25px;
+        transition: 0.4s;
+    }
+
+    a:hover {
+        color: var(--logo--color);
     }
 }
 
@@ -133,18 +142,9 @@ main {
             transition: 0.4s;
         }
 
-        .flavors-card:nth-child(3):hover {
-            background: rgb(255, 196, 0);
-            color: var(--font--color);
-        }
-
-        .flavors-card:nth-child(4):hover {
-            background: rgb(241, 7, 7);
-            color: var(--font--color2);
-        }
-
-        .flavors-card:nth-last-child(2):hover {
-            background: rgb(167, 71, 26);
+        .flavors-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 5px 10px #888888;
         }
     }
 }
