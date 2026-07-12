@@ -58,16 +58,12 @@ header {
     left: -200px;
     height: 50vh;
     background-color: black;
-    padding: 4vw;
+    padding: 3vw;
     display: flex;
     align-items: center;
     border-radius: 10px;
     width: 15%;
     transition: 0.4s;
-
-    .sidebar .active {
-        left: 0;
-    }
 
     
 
@@ -105,6 +101,10 @@ header {
     button:hover {
         color: var(--logo--color);
     }
+}
+
+.sidebar .active {
+    left: 0;
 }
 
 main {
