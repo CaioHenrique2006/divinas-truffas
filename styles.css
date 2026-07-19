@@ -61,7 +61,6 @@ header {
     padding: 3vw;
     display: flex;
     align-items: center;
-    border-radius: 10px;
     width: 15%;
     transition: 0.4s;
 
@@ -103,8 +102,23 @@ header {
     }
 }
 
-.sidebar .active {
+.sidebar.active {
     left: 0;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.466);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s;
+    z-index: 0;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 main {

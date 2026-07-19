@@ -1,16 +1,19 @@
 // FUNÇÃO PARA ABRIR E FECHAR O MENU
 const menuBtn = document.querySelector('.menu-icon');
 const sideBar = document.querySelector('.sidebar');
+const overlay = document.querySelector('.overlay');
 
 
 function abrirMenu() {
     menuBtn.addEventListener('click', (e) => {
         sideBar.classList.toggle('active');
         sideBar.style.left = '0';
+        overlay.classList.toggle('active');
 
         sideBar.addEventListener('click', (e) => {
             sideBar.classList.remove('active');
             sideBar.style.left = '-200px';
+            overlay.classList.remove('active');
         })
     })
 }
@@ -31,4 +34,3 @@ const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
 window.open(url, "_blank")
 
 }
-
