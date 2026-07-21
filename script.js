@@ -7,14 +7,17 @@ const overlay = document.querySelector('.overlay');
 function abrirMenu() {
     menuBtn.addEventListener('click', (e) => {
         sideBar.classList.toggle('active');
-        sideBar.style.left = '0';
         overlay.classList.toggle('active');
+    });
 
-        sideBar.addEventListener('click', (e) => {
-            sideBar.classList.remove('active');
-            sideBar.style.left = '-200px';
-            overlay.classList.remove('active');
-        })
+    sideBar.addEventListener('click', () => {
+        sideBar.classList.remove('active');
+        overlay.classList.remove('active');
+    })
+
+    overlay.addEventListener('click', () => {
+        sideBar.classList.remove('active');
+        overlay.classList.remove('active');
     })
 }
 
