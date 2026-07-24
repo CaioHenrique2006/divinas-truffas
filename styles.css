@@ -346,4 +346,19 @@ main {
             align-items: center;
         }
     }
+
+    #contact {
+        margin-top: 100px;
+
+        form {
+            padding: 20px;
+            margin: 10px
+        }
+
+        .grupo-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
 }
