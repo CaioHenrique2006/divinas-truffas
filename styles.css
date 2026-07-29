@@ -279,127 +279,16 @@ main {
 /* POCO X7 PRO - 407px*/
 
 @media (max-width: 407px) {
+
     :root {
-        font-size: 1.2rem;
-    }
-
-    body {
-        font-size: 1.2rem;
-    }
-
-    header {
-        
-        h1 {
-            font-size: 1.5rem;
-        }
-    }
-
-    .sidebar {
-        width: 60%;
-        left: -60%;
-    }
-
-        nav a {
-            padding-left: 50px;
-            margin: 25px;
-        }
+        font-size: 1rem;
     }
 
     #home {
         .hero {
-            display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin-top: 50px;
-        }
-
-        .left-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin: 0;
-            gap: 25px;
-
-            h2 {
-                margin: 0;
-            }
-
-            p {
-                text-align: center;
-            }
-        }
-
-        .right-content {
-            margin: 0;
-            display: flex;
-
-            img {
-                width: 250px;
-                align-items: center;
-            }
-
-            p {
-                margin: 0;
-                text-align: center;
-            }
-        }
-    }
-
-    #flavors {
-        margin-top: 100px;
-
-        
-        .flavors-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    }
-
-    #contact {
-        margin-top: 100px;
-
-        form {
-            padding: 1.5rem;
-            margin: 10px;
-        }
-
-        .grupo-form {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        button {
-            height: 50px;
-        }
-    }
-
-    #sobre {
-        margin-top: 40vw;
-
-        h2 {
-            font-size: 1.5rem;
-        }
-
-        p {
-            font-size: 1rem;
             text-align: center;
-            margin: 0;
-        }
-
-        footer {
-            font-size: 0.7rem;
-
-            h1 {
-                text-align: center;
-            }
-
-            p {
-                text-align: center;
-                margin-bottom: 30px;
-            }
+            gap: 40px;
         }
     }
+}
