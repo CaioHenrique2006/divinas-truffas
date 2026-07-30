@@ -289,6 +289,22 @@ main {
             flex-direction: column;
             text-align: center;
             gap: 40px;
+            margin-top: 80px;
+        }
+
+        .right-content {
+            p {
+                margin: 0;
+            }
+        }
+    }
+
+    #flavors {
+        .flavors-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: center;
+            gap: 20px;
         }
     }
 }
