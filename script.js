@@ -5,7 +5,7 @@ const overlay = document.querySelector('.overlay');
 
 
 function abrirMenu() {
-    menuBtn.addEventListener('click', (e) => {
+    menuBtn.addEventListener('click', () => {
         sideBar.classList.toggle('active');
         overlay.classList.toggle('active');
     });
