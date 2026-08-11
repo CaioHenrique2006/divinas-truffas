@@ -11,9 +11,17 @@ function abrirMenu() {
     overlay.classList.toggle('active');
 }
 
-overlay.addEventListener('click', () => {
+const links = document.querySelectorAll('.menu a')
+
+function fecharMenu() {
     sideBar.classList.remove('active');
     overlay.classList.remove('active');
+}
+
+overlay.addEventListener('click', fecharMenu);
+
+links.forEach((link) => {
+    link.addEventListener('click', fecharMenu)
 })
 
 // FUNÇÃO PARA ENVIAR MENSAGEM PARA O WHATSAPP
