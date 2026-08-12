@@ -33,9 +33,10 @@ const nome = document.getElementById('nome');
 const mensagem = document.getElementById('mensagem');
 const telefone = '5579998634165';
 
-const msgFormatada = `Olá, meu nome é ${nome.value}, ${mensagem.value}`;
+const msgFormatada = `Olá, meu nome é ${nome.value.trim()}. ${mensagem.value.trim()}`;
+const textoCodificado = encodeURIComponent(msgFormatada);
 
-const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+const url = `https://wa.me/${telefone}?text=${textoCodificado}`;
 
 window.open(url, "_blank")
 
