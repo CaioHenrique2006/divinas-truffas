@@ -270,7 +270,7 @@ main {
 
 /* POCO X7 PRO - 407px*/
 
-@media (max-width: 407px) {
+@media (max-width: 768px) {
 
     :root {
         font-size: 1.3rem;
